@@ -9,7 +9,7 @@ def read_input_float(prompt: str = "Input a float value: ") -> float:
         prompt (str, optional): user prompt. Defaults to "Input a float value: ".
 
     Raises:
-        AbsException: can't convern input string to float
+        AbsException: can't convert input string to float
 
     Returns:
         float: resulting float
@@ -18,7 +18,7 @@ def read_input_float(prompt: str = "Input a float value: ") -> float:
         return float(input(prompt))
     except (TypeError, ValueError, EOFError) as e:
         raise AbsException(
-            f"Can't validate your input as the float number: {str(e)}")
+            f"Can't validate your input as a float number: {str(e)}")
 
 
 def calculate(x: float, y: float) -> float:
