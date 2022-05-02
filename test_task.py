@@ -17,5 +17,5 @@ def test_read_input_float_valid(monkeypatch):
 
 def test_calculate():
     for x in [x for x in range(-999, 999, 1)]:
-        for y in [x for x in range(999, 999, 1)]:
+        for y in [x for x in range(-999, 999, 1)]:
             assert calculate(x, y) == abs(x - y)
